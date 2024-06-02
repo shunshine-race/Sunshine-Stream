@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Race</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        /* Obrazek w tle */
+        body {
+            background-image: url('To2.jpg');
+            background-size: cover;
+        }
+
+        /* Stylizacja kafelka */
+        .tile {
+            width: 110px;
+            height: 40px;
+            background-color: red;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Cień */
+        }
+
+        .tile:hover {
+            background-color: darkred;
+        }
+
+        .tile-text {
+            font-family: 'Press Start 2P', sans-serif;
+            color: #fff;
+            font-size: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Cień */
+        }
+    </style>
+</head>
+<body>
+    <div id="video">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/5ebkMLk2vEI" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="tile" onclick="window.location.href='https://shunshine-race.github.io'">
+        <span class="tile-text">Powrót</span>
+    </div>
+</body>
+</html>
